@@ -1,0 +1,21 @@
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title class="mat-h2">William Smith
+      <span class="time-ago mat-caption">4 months ago</span>
+    </mat-card-title>
+    <mat-card-subtitle>Meeting Tomorrow</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      Hi, let's have a meeting tomorrow to discuss the project. I've been
+      reviewing the project details and have some ideas...
+    </p>
+  </mat-card-content>
+  <mat-card-footer>
+    <mat-chip-set>
+      @for(category of categories; track category) {
+      <mat-chip>{{ category }}</mat-chip>
+      }
+    </mat-chip-set>
+  </mat-card-footer>
+</mat-card>
